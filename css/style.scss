@@ -47,6 +47,35 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.links{
+    width: 100%;
+    height: 100vh;
+    background: rgb(129, 97, 97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 100vw;
+    display: none;
+
+    ul{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+        a{
+            font-size: 2rem;
+        }
+    }
+}
+
+.slider{
+    transform: translateX(-100vw);
+    display: block;
+}
 //phone styles
  
 .banner{
@@ -76,6 +105,7 @@ table {
         
     }
     .hamburger{
+        z-index: 2;
         border: 2px solid maroon;
         height: 3rem;
         width: 3rem;
@@ -460,7 +490,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     #footer{
-        height: 45vh;
+        height: 59vh;
     }
 
 }
